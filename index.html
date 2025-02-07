@@ -1,7 +1,26 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+    <style>
+        html, body {
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #renderCanvas {
+            width: 100%;
+            height: 100%;
+            touch-action: none;
+        }
+    </style>
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
+</head>
 <body>
-<h1>Yeo Wei Quan's Portfolio</h1>
-<p>Coming Soon!</p>
+    <canvas id="renderCanvas"></canvas>
+    <script src="scripts/entry_point.js" type="module"></script>
 </body>
 </html>
