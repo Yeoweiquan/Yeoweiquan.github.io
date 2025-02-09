@@ -1,5 +1,5 @@
 // babylon scene manager
-export var createScene = function (engine, canvas) {
+export var createScene = async function (engine, canvas) {
     // This creates a basic Babylon Scene object (non-mesh)
     var scene = new BABYLON.Scene(engine);
 
