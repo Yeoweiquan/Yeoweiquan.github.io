@@ -18,14 +18,10 @@ export var createScene = function (engine, canvas) {
     // Default intensity is 1. Let's dim the light a small amount
     light.intensity = 0.7;
 
-    // Our built-in 'sphere' shape.
-    var sphere = BABYLON.MeshBuilder.CreateSphere("sphere", { diameter: 2, segments: 32 }, scene);
-
-    // Move the sphere upward 1/2 its height
-    sphere.position.y = 1;
-
     // Our built-in 'ground' shape.
     var ground = BABYLON.MeshBuilder.CreateGround("ground", { width: 6, height: 6 }, scene);
+
+    await BABYLON.appendSceneAsync("../resource/models/tunnel.glb", scene);
 
     return scene;
 };
