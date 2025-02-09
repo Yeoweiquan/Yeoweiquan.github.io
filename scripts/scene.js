@@ -22,9 +22,8 @@ export var createScene = async function (engine, canvas) {
     var ground = BABYLON.MeshBuilder.CreateGround("ground", { width: 6, height: 6 }, scene);
 
     BABYLON.SceneLoader.ImportMeshAsync("", "../resource/models/", "tunnel.glb", scene).then((result) => {
-        result.meshes[1].position.x = 20;
         const myMesh1 = scene.getMeshByName("Tunnel");
-        myMesh1.rotation.y = Math.PI / 2;
+        myMesh1.rotation.y = Math.PI;
     });
 
     return scene;
