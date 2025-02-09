@@ -4,7 +4,7 @@ export var createScene = async function (engine, canvas) {
     var scene = new BABYLON.Scene(engine);
 
     // This creates and positions a free camera (non-mesh)
-    var camera = new BABYLON.FreeCamera("camera1", new BABYLON.Vector3(0, 5, -10), scene);
+    var camera = new BABYLON.ArcRotateCamera("camera1", 0, 0, 0, new BABYLON.Vector3(0, 50, -10), scene);
 
     // This targets the camera to scene origin
     camera.setTarget(BABYLON.Vector3.Zero());
@@ -23,7 +23,7 @@ export var createScene = async function (engine, canvas) {
 
     BABYLON.SceneLoader.ImportMeshAsync("", "../resource/models/", "tunnel.glb", scene).then((result) => {
         const myMesh1 = scene.getMeshByName("Tunnel");
-        myMesh1.rotation.y = Math.PI;
+        // myMesh1.rotation.y = Math.PI;
     });
 
     return scene;
