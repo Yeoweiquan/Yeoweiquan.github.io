@@ -4,7 +4,7 @@ import { createScene } from "./scene.js";
 const canvas = document.getElementById("renderCanvas");
 const engine = new BABYLON.Engine(canvas, true);
 
-const scene = createScene(engine, canvas);
+const scene = await createScene(engine, canvas);
 
 // Register a render loop to repeatedly render the scene
 engine.runRenderLoop(function () {
