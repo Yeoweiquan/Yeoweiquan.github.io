@@ -1,27 +1,147 @@
 <!DOCTYPE html>
 <html>
-
 <head>
+    <title>Yeo Wei Quan's Simple Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        html, body {
-            overflow: hidden;
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
-
-        #renderCanvas {
-            width: 100%;
-            height: 100%;
-            touch-action: none;
+        html, body, h1, h2, h3, h4, h5, h6 {
+            font-family: "Roboto", sans-serif
         }
     </style>
-    <script src="https://cdn.babylonjs.com/babylon.js"></script>
-    <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
 </head>
-<body>
-    <canvas id="renderCanvas"></canvas>
-    <script src="scripts/entry_point.js" type="module"></script>
+<body class="w3-light-grey">
+
+    <!-- Page Container -->
+    <div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+        <!-- The Grid -->
+        <div class="w3-row-padding">
+
+            <!-- Left Column -->
+            <div class="w3-third">
+
+                <div class="w3-white w3-text-grey w3-card-4">
+                    <div class="w3-display-container">
+                        <img src="/w3images/avatar_hat.jpg" style="width:100%" alt="Avatar">
+                        <div class="w3-display-bottomleft w3-container w3-text-black">
+                            <h2>Yeo WeiQuan</h2>
+                        </div>
+                    </div>
+                    <div class="w3-container">
+                        <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Software Engineer / Game Developer</p>
+                        <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Singapore</p>
+                        <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>yeoweiquan@gmail.com</p>
+                        <hr>
+
+                        <p class="w3-large w3-text-theme"><b><i class="fa  fa-male fa-fw w3-margin-right w3-text-teal"></i>AboutMe:</b></p>
+                        <p>I am a developer graduating from BSC in Interactive media and Game Development from Digipen(SIT). Studying in game development as well as computer science, I am passionate in various programming subjects as well as game designs. Other than CS my experiences have also trained in UI/UX and 3D modeling.</p>
+
+                        <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Technical Skills</b></p>
+
+                        <h6 class="w3-opacity"><b>Software Development:</b></h6>
+
+                        <p>MS Visual Studio, Unity, Android Studio</p>
+
+                        <h6 class="w3-opacity"><b>Programming Languages:</b></h6>
+
+                        <p>C++, C#, Python, Javascript, SQL</p>
+
+                        <h6 class="w3-opacity"><b>Markup Languages:</b></h6>
+
+                        <p>HTML, XML, XODR, YAML</p>
+
+
+                        <h6 class="w3-opacity"><b>UI/UX:</b></h6>
+
+                        <p>Figma, Photoshop, GIMP</p>
+
+                        <h6 class="w3-opacity"><b>Others:</b></h6>
+
+                        <p>Linux (Ubuntu), GIT, Jira, Blender</p>
+                        <br>
+
+                    </div>
+                </div><br>
+
+                <!-- End Left Column -->
+            </div>
+
+            <!-- Right Column -->
+            <div class="w3-twothird">
+
+                <div class="w3-container w3-card w3-white w3-margin-bottom">
+                    <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-cog fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects</h2>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>SnailsVsSlimes</b></h5>
+                        <h6 class="w3-opacity"><b>Main Roles: Programmer / Art</b></h6>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Year 1 Trimester 1</h6>
+                        <p>Snails Vs Slimes is a tower defense game inspired by Plants Vs Zombie, it's a group project that me and my teammates have created for a software engineering module in Digipen. This game is the first ever game that I have officially created.</p>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Built Different</b></h5>
+                        <h6 class="w3-opacity"><b>Main Roles: Team Lead / Programmer</b></h6>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Year 1 Trimester 2</h6>
+                        <p>Built Different is a 2D platformer game made for our second game project in Digipen. The main concept of the game is for the player to build blocks with limited resources to help them avoid traps and reach the door for each level.</p>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>TouchDown</b></h5>
+                        <h6 class="w3-opacity"><b>Main Roles: Tech Lead / Programmer</b></h6>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Year 2 Trimester 1 and 2</h6>
+                        <p>TouchDown is a typing and strategy mash-up game where the player will have to type words for currency to spawn robotic troops to attack the alien enemies. This is the third project that I have worked on in Digipen and the game is made on a custom engine that our team built for this project.</p>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Witch Way Up</b></h5>
+                        <h6 class="w3-opacity"><b>Main Roles: Product Manager / Programmer</b></h6>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Year 3 Trimester 1 and 2</h6>
+                        <p>Witch Way Up is a third-person puzzle-solving game where players have to solve puzzles spanning two different dimensions in order to escape a possibly deadly trap by the evil witch. The game involves exploring the 2 dimensions via 2 different characters in order to solve light rays and pressure plate puzzles to open locked doors. </p><br>
+                    </div>
+                </div>
+
+                <div class="w3-container w3-card w3-white w3-margin-bottom">
+                    <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Map Annotation Intern at Venti Technologies</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2024 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+                        <p>As a map annotation Intern I was task with developing python script tools to assist the team with processing map geometries and validations of map updates. </p>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Augmented Reality Software Engineer at ST Microelectronics</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2020 - Aug 2021</h6>
+                        <p>As a Augmented Reality Software Engineer trainee, I was tasked to create 3D models and work with simulation software to support digital twin efforts of factories.</p>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>National Service (SAF Mapping Unit)</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2018 - Oct 2020</h6>
+                        <p>Assisted in automating parts of mapping processes</p>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>C++ Programming Intern at Tribal World Wide</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Apr 2017 - Sep 2017</h6>
+                        <p>As a C++ programming intern, I was task to assit in a openCV based API for real time image manipulation as well as assist in testing on chat bot APIs. </p><br>
+                    </div>
+                </div>
+
+                <!-- End Right Column -->
+            </div>
+
+            <!-- End Grid -->
+        </div>
+
+        <!-- End Page Container -->
+    </div>
+
+    <footer class="w3-container w3-teal w3-center w3-margin-top">
+    </footer>
+
 </body>
 </html>
